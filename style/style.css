@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 30px auto 5px;
+    /* border: 3px solid orange; */
+}
+
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 20px;
+
+}
+
+.paragraph h2 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.paragraph p {
+    max-width: 350px;
+    font-size: 14px;
+}
+
+/* Gallery */
+.gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: orange; */
+    gap: 50px;
+    margin: 50px 20px 0;
+}
+
+.gallery p {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.photo-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5,
+.photo-6 {
+    position: relative;
+}
+
+.photo-2,
+.photo-4,
+.photo-6 {
+    margin-top: 100px;
+}
+
+.photo h4 {
+    margin-top: 20px;
+}
+
+.photo p {
+    position: absolute;
+    transform-origin: 0;
+    transform: rotate(90deg);
+    top: -10px;
+}
+
+.photo-1 p {
+    right: -132px;
+}
+
+.photo-2 p {
+    right: -106px;
+}
+
+.photo-3 p {
+    right: -83px;
+}
+
+.photo-4 p {
+    right: -96px;
+}
+
+.photo-5 p {
+    right: -85px;
+}
+
+.photo-6 p {
+    right: -85px;
+}
+
+.photo h4 {
+    font-size: 20px;
+}
+
+/* footer */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+
+/* Responsive Breakpoint */
+
+@media (min-width: 894px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .paragraph h2 {
+        margin-bottom: 5px;
+    }
+
+    .paragraph p {
+        max-width: 400px;
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .photo-2,
+    .photo-5 {
+        margin-top: 100px;
+    }
+
+    .photo-4,
+    .photo-6 {
+        margin-top: 0;
+    }
+
+    .photo-4 p {
+        right: -98px;
+    }
+
+    .photo-6 p {
+        right: -86px;
+    }
+
+
+}
